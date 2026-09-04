@@ -1,1 +1,14 @@
+body {
+    background-color: #3d4558
+}
 
+a {
+    color: #b6ff8b
+}
+a:visited {
+    color: #79e3aa
+}
+
+h1, h2, h3, p, ul {
+    color: #dcb0ff
+}
