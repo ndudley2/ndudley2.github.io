@@ -3,10 +3,12 @@ body {
 }
 
 a:link {
-    color: #b6ff8b
+    color: #b6ff8b;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 a:visited {
-    color: #79e3aa
+    color: #79e3aa;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 h1, h2, h3, p, ul, figure {
