@@ -20,3 +20,8 @@ img {
     width: 20%;
     height: auto;
 }
+
+h6 {
+    display: block;
+    font-size: large;
+}
