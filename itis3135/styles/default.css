@@ -27,3 +27,10 @@ h6 {
     font-family: 'Trebuchet MS', sans-serif;
     color: #dcb0ff;
 }
+
+@media only screen and (orientation:portrait) {
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
