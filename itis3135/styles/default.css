@@ -4,11 +4,11 @@ body {
 
 a:link {
     color: #b6ff8b;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 a:visited {
     color: #79e3aa;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
 }
 
 h1, h2, h3, p, ul, figure {
@@ -24,4 +24,5 @@ img {
 h6 {
     display: block;
     font-size: large;
+    font-family: 'Trebuchet MS', sans-serif;
 }
