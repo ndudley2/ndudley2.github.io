@@ -1,5 +1,6 @@
 body {
-    background-color: #3d4558
+    background-color: #3d4558;
+    max-width: 900px;
 }
 
 a:link {
@@ -11,15 +12,28 @@ a:visited {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-h1, h2, h3, p, ul, ol, li, blockquote, figure {
+h2, h3, p, ul, ol, li, blockquote, figure {
     color: #dcb0ff;
     font-family: 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    color: #dcb0ff;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: auto;
 }
 
 img {
     width: 20%;
     height: auto;
 }
+
+header, footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 h6 {
     display: block;
