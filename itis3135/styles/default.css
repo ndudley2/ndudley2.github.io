@@ -48,3 +48,6 @@ h6 {
         height: auto;
     }
 }
+hr {
+    border: 2px dotted #8BC9FF;
+}
