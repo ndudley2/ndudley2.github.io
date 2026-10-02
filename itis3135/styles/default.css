@@ -8,10 +8,6 @@ a:link {
     color: #b6ff8b;
     font-family: "Lucida Console", "Courier New", monospace;
 }
-a:visited {
-    color: #79e3aa;
-    font-family: "Lucida Console", "Courier New", monospace;
-}
 
 h2, h3, p, ul, ol, li, blockquote, figure {
     color: #dcb0ff;
