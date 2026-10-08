@@ -4,7 +4,6 @@
         <title>Natalia's Hobby Page | My Hobby: Poetry</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/default.css">
         <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
@@ -92,6 +91,9 @@
             hr {
                 border: 2px dashed #A05C7B;
             }
+            #who, #what, #where, #when, #why, #how {
+                display: none;
+            }
             @media only screen and (orientation:portrait) {
                 .row {
                     display: flex;
@@ -108,17 +110,19 @@
             <h1>Natalia's Hobby Page</h1>
             <nav>
                 <p>
-                <a href="#who">Who</a> ♦︎
-                <a href="#what">What</a> ♦︎
-                <a href="#when">When</a> ♦︎
-                <a href="#where">Where</a> ♦︎
-                <a href="#how">How</a> ♦︎
-                <a href="#why">Why</a> ♦︎
-                <a href="#prompts">AI Prompts</a>
+                <a onclick="pageChange(this)" href="#who">Who</a> ♦︎
+                <a onclick="pageChange(this)" href="#what">What</a> ♦︎
+                <a onclick="pageChange(this)" href="#when">When</a> ♦︎
+                <a onclick="pageChange(this)" href="#where">Where</a> ♦︎
+                <a onclick="pageChange(this)" href="#how">How</a> ♦︎
+                <a onclick="pageChange(this)" href="#why">Why</a> ♦︎
+                <a onclick="pageChange(this)" href="#prompts">AI Prompts</a>
                 </p>
             </nav>
         </header>
-        <main>
+        <main onload="startPage()">
+            <!--ID indicates the current section-->
+            <section id="current"></section>
             <!--ID indicates the who section-->
             <section id="who">
                 <h2>About Me</h2>
@@ -143,7 +147,7 @@
             <!--ID indicates the what section-->
             <section id="what">
                 <h2>My Hobby: Poetry</h2>
-                <p>Do I really need to tell you what poetry is? Well, honestly, a lot of people I meet don't seem to get it. Poetry isn't just making things rhyme, or using a 7-5-7 syllable structure, or talking like Shakespeare. It CAN be those things, but it can also be basically whatever you want! Seriously, you can write almost anything and call it a poem. The only thing that distinguishes poems is that they typically break some of the rules of prose (normal writing). For example, poems are often symbolic rather than literal, intentionally misuse or ignore grammar and punctuation, and use unusual spacing and lines for emphasis.</p>
+                <p>Do I really need to tell you what poetry is? Well, sometimes people don't seem to get it. Poetry isn't just making things rhyme, or using a 7-5-7 syllable structure, or talking like Shakespeare. It CAN be those things, but it can also be basically whatever you want! Seriously, you can write almost anything and call it a poem. The only thing that distinguishes poems is that they typically break some of the rules of prose (normal writing). For example, poems are often symbolic rather than literal, intentionally misuse or ignore grammar and punctuation, and use unusual spacing and lines for emphasis.</p>
                 <p>Sometimes I see the sentiment that people who write poetry are scary, pretentious, or "performative". I don't think I'm any of those. Well, I like to think I'm not like that! I try to be friendly, I like pop music and bad movies (I watch <i>Eight Crazy Nights</i> every year), and I don't really show my writing to anyone these days.</p>
                 <p>Well... to contradict my last point, I want to show some of my poems here. Hey, it's my website!</p>
                     <blockquote>My parents made me go to church today<br>
@@ -274,4 +278,16 @@
             <p>Natalia Dudley ©2026</p>
         </footer>
     </body>
+    <script>
+        function pageChange(element){
+            const attr = element.getAttributeNode("href");
+            const current = document.getElementById("current").innerHTML;
+            current = document.getElementById(attr.value).innerHTML;
+        }
+        function startPage() {
+            const current = document.getElementById("current").innerHTML;
+            current = document.getElementById("what").innerHTML;
+        }
+
+    </script>
 </html>
