@@ -75,7 +75,14 @@
                 width: auto;
             }
             textarea {
+                display: block;
                 margin: auto;
+            }
+            label {
+                font-family: Helvetica, sans-serif;
+                color: #8b4a67;
+                text-align: center;
+
             }
             .row {
                 display: flex;
@@ -243,7 +250,8 @@
                     </figcaption>
                 </figure>
                 <p>If I'm writing something that needs to rhyme, I'll use <a target="_blank" href="https://www.rhymezone.com/">RhymeZone</a> to help me. If a word doesn't sound right, I'll look up synonyms.</p>
-                <textarea rows="8" cols="65" placeholder="Write something right now!"></textarea>
+                <label for="textarea">You should just try it!</label>
+                <textarea id="textarea" rows="8" cols="65" placeholder="Write something right now!"></textarea>
             </section>
             <!--ID indicates the why section-->
             <section id="why">
