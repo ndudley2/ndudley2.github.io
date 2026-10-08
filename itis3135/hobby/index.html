@@ -1,7 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>h1 | h2</title>
+        <title>Natalia's Hobby Page | My Hobby: Poetry</title>
+        <style>
+            body {
+                max-width: 1000px;
+                margin: auto;
+                background-color: #F5EDF0;
+            }
+            header, footer {
+                background-color: #A05C7B;
+            }
+            h1 {
+                text-align: center;
+                font-family: Consolas, monaco, monospace;
+                color: #254E70;
+                background-color: #F5EDF0;
+                border-radius: 5px;
+            }
+            h2 {
+                font-family: Consolas, monaco, monospace;
+                color: #254E70;
+            }
+            a {
+                color: #570000
+            }
+            p {
+                font-family: Helvetica, sans-serif;
+                color: #A05C7B;
+            }
+            header p, footer p {
+                color: #F5EDF0;
+            }
+            header a, footer a {
+                color: #A9FDAC
+            }
+            blockquote {
+                font-family: 'Courier New', Courier, monospace;
+                color:#570000;
+            }
+            figure {
+                width: 50%;
+                text-align: center;
+                font-family: Helvetica, sans-serif;
+                color: #A05C7B;
+            }
+            .row {
+                display: flex;
+                justify-content: space-around;
+            }
+            .row figure {
+                width: 40%;
+            }
+            #what figure {
+                float: right;
+                width: 30%;
+            }
+            @media only screen and (orientation:portrait) {
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+            }
+        </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/default.css">
@@ -10,16 +72,11 @@
         <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
-        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
-
-        <style>
-
-
-        </style>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <h1>Hobby page!</h1>
+            <h1>Natalia's Hobby Page</h1>
             <nav>
                 <p>
                 <a href="#who">Who</a> ~
@@ -32,25 +89,31 @@
             </nav>
         </header>
         <main>
+            <!--ID indicates the who section-->
             <section id="who">
                 <h2>About Me</h2>
                 <p>Hi there! My name is Natalia. I've been writing poetry since I was 12 years old.</p>
+                <!--figures in a div so I can put them in a flexbox-->
+                <div class="row">
                 <figure>
                     <img alt="smiling kid holding an ice cream cone" src="images/younger_self.jpeg">
                     <figcaption>Me then</figcaption>
+                    <p><i>Source: me</i></p>
                 </figure>
                 <figure>
                     <img alt="recent selfie holding a Monster Energy can" src="images/current_self.jpeg">
                     <figcaption>Me now</figcaption>
+                    <p><i>Source: me</i></p>
                 </figure>
+                </div>
                 <p>I've changed a lot since then, and so has my writing.</p>
             </section>
+            <!--ID indicates the what section-->
             <section id="what">
                 <h2>My Hobby: Poetry</h2>
                 <p>Do I really need to tell you what poetry is? Well, honestly, a lot of people I meet don't seem to get it. Poetry isn't just making things rhyme, or using a 7-5-7 syllable structure, or talking like Shakespeare. It CAN be those things, but it can also be basically whatever you want! Seriously, you can write almost anything and call it a poem. The only thing that distinguishes poems is that they typically break some of the rules of prose (normal writing). For example, poems are often symbolic rather than literal, intentionally misuse or ignore grammar and punctuation, and use unusual spacing and lines for emphasis.</p>
                 <p>Sometimes I see the sentiment that people who write poetry are scary, pretentious, or "performative". I don't think I'm any of those. Well, I like to think I'm not like that! I try to be friendly, I like pop music and bad movies (I watch <i>Eight Crazy Nights</i> every year), and I don't really show my writing to anyone these days.</p>
                 <p>Well... to contradict my last point, I want to show some of my poems here. Hey, it's my website!</p>
-                <div>
                     <blockquote>My parents made me go to church today<br>
                         But they gave Dum-Dums at the exit<br>
                         So maybe it was worth it<br>
@@ -62,7 +125,8 @@
                     </blockquote>
                     <figure>
                         <img src="images/lollipops.png" alt="lollipops">
-                        <figcaption>Source: eismannhans on Pixabay</figcaption>
+                        <figcaption>Lollipops, like I mentioned in the poem.</figcaption>
+                        <p><i>Source: eismannhans on Pixabay</i></p>
                     </figure>
                     <blockquote>Quartz stalactites hang from my heart<br>
                         Amplifying energy, allegro agitato<br>
@@ -83,7 +147,8 @@
                     </blockquote>
                     <figure>
                         <img src="images/sandbox.png" alt="a sandbox with plastic shovels">
-                        <figcaption>Source: ajoheyho on Pixabay</figcaption>
+                        <figcaption>A sandbox, like I mentioned in the poem.</figcaption>
+                        <p><i>Source: ajoheyho on Pixabay</i></p>
                     </figure>
                     <blockquote>
                         I'm sorry I couldn't be good for you.<br>
@@ -100,23 +165,26 @@
                         <br>
                         2/9/26
                     </blockquote>
-                </div>
             </section>
+            <!--ID indicates the when section-->
             <section id="when">
                 <h2>When Do You Write Poetry?</h2>
                 <p>I write whenever I feel like it. Usually, an idea comes into my head and I need to get it out. Sometimes, inspiration strikes when I'm in class or at work. When that happens, I try to write down my idea as soon as possible so I can write the poem at a more appropriate location.</p>
                 <p>Strong emotions are my biggest motivator. I write more when I'm depressed, anxious, or angry. Most of my poems are written late at night when I'm alone with my thoughts. I know that sounds really dark and "edgy", but it's honest. I think getting these feelings out through writing helps me stay emotionally regulated in my daily life. It does mess with my sleep schedule sometimes, though.</p>
                 <figure>
                     <img src="images/night.png" alt="the moon at night">
-                    <figcaption>Source: Kanenori on Pixabay</figcaption>
+                    <figcaption>I usually write at night</figcaption>
+                    <p><i>Source: Kanenori on Pixabay</i></p>
                 </figure>
             </section>
+            <!--ID indicates the where section-->
             <section id="where">
                 <h2>Where Do You Write Poetry?</h2>
                 <p>I write while laying in bed, riding the bus, enjoying a treat at a restaurant, wherever I feel like, as long as it isn't disrupting the people around me. Since I write on my phone, it's easy to do it anywhere.</p>
                 <figure>
                     <img alt="a bed with a colorful checkerboard pattern" src="images/bedroom.jpeg">
                     <figcaption>My bed</figcaption>
+                    <p><i>Source: me</i></p>
                 </figure>
                 <p>If you want to try writing, a location can help with inspiration. Here are some suggestions:</p>
                 <ul>
@@ -126,15 +194,19 @@
                     <li>Parks (peoplewatching can also be good inspiration)</li>
                 </ul>
             </section>
+            <!--ID indicates the how section-->
             <section id="how">
                 <h2>How Do You Write Poetry?</h2>
                 <p>I usually write using the Notes app on my phone. When I was starting out, I would write at my desk in my room on a small notepad.</p>
                 <figure>
                     <img alt="a note on the iOS Notes app labeled 'POETRY 2!'" src="images/poetry2.jpeg">
                     <figcaption>All of my recent poems go here</figcaption>
+                    <p><i>Source: me</i></p>
                 </figure>
                 <p>If I'm writing something that needs to rhyme, I'll use <a href="https://www.rhymezone.com/">RhymeZone</a> to help me. If a word doesn't sound right, I'll look up synonyms.</p>
+                <textarea rows="4" cols="50" placeholder="Write something right now!"></textarea>
             </section>
+            <!--ID indicates the why section-->
             <section id="why">
                 <h2>Why Do You Write Poetry?</h2>
                 <blockquote>“When emotions are too strong for words, sing.”</blockquote>
@@ -151,11 +223,13 @@
                 <p>Imagine if Dolly had simply said <q>"You're beautiful. You have brown hair, clear skin, and green eyes. Your smile is pretty and your voice is gentle. I'll never be as pretty as you, Jolene"</q>. That wouldn't be nearly as effective!</p>
                 <figure>
                     <img src="images/dolly_parton.jpg" alt="Dolly Parton in 2010">
-                    <figcaption><a href="https://commons.wikimedia.org/wiki/File:Dolly_Parton_accepting_Liseberg_Applause_Award_2010_portrait.jpg">"Dolly Parton accepting Liseberg Applause Award 2010"</a> by Curtis Hilbun licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></figcaption>
+                    <figcaption>Dolly Parton</figcaption>
+                    <p><i>Source: <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Dolly_Parton_accepting_Liseberg_Applause_Award_2010_portrait.jpg">"Dolly Parton accepting Liseberg Applause Award 2010"</a> by Curtis Hilbun licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></i></p>
                 </figure>
             </section>
         </main>
         <footer>
+            <p><i>"The only kind of creative writing that I enjoy."</i></p>
             <a class="button-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fndudley2%2Fitis3135%2Fhobby%2F" target="_blank">HTML Validator</a>
             <a class="button-link" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fndudley2%2Fitis3135%2Fhobby%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validator</a>
             <a class="button-link" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/ndudley2/itis3135/hobby/" target="_blank">Accessibility Validator</a>
