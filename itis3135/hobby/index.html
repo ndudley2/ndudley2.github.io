@@ -105,7 +105,7 @@
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body  onload="startPage()">
         <header>
             <h1>Natalia's Hobby Page</h1>
             <nav>
@@ -120,7 +120,7 @@
                 </p>
             </nav>
         </header>
-        <main onload="startPage()">
+        <main>
             <!--ID indicates the current section-->
             <div id="current">
             </div>
@@ -280,7 +280,7 @@
         </footer>
         <script>
         function pageChange(element){
-            const attr = element.getAttribute("href");
+            const attr = element.getAttribute("href").slice(1);
             document.getElementById("current").innerHTML = document.getElementById(attr).innerHTML;
         }
         function startPage() {
