@@ -91,7 +91,7 @@
             hr {
                 border: 2px dashed #A05C7B;
             }
-            #who, #what, #where, #when, #why, #how {
+            #who, #what, #where, #when, #why, #how, #prompts{
                 display: none;
             }
             @media only screen and (orientation:portrait) {
@@ -280,9 +280,9 @@
     </body>
     <script>
         function pageChange(element){
-            const attr = element.getAttributeNode("href");
+            const attr = element.getAttribute("href");
             const current = document.getElementById("current").innerHTML;
-            current = document.getElementById(attr.value).innerHTML;
+            current = document.getElementById(attr).innerHTML;
         }
         function startPage() {
             const current = document.getElementById("current").innerHTML;
