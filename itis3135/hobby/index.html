@@ -122,7 +122,8 @@
         </header>
         <main onload="startPage()">
             <!--ID indicates the current section-->
-            <section id="current"></section>
+            <div id="current">
+            </div>
             <!--ID indicates the who section-->
             <section id="who">
                 <h2>About Me</h2>
@@ -281,11 +282,11 @@
     <script>
         function pageChange(element){
             const attr = element.getAttribute("href");
-            const current = document.getElementById("current").innerHTML;
+            let current = document.getElementById("current").innerHTML;
             current = document.getElementById(attr).innerHTML;
         }
         function startPage() {
-            const current = document.getElementById("current").innerHTML;
+            let current = document.getElementById("current").innerHTML;
             current = document.getElementById("what").innerHTML;
         }
 
