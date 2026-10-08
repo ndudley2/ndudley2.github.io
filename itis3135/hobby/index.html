@@ -282,13 +282,10 @@
     <script>
         function pageChange(element){
             const attr = element.getAttribute("href");
-            let current = document.getElementById("current").innerHTML;
-            current = document.getElementById(attr).innerHTML;
+            document.getElementById("current").innerHTML = document.getElementById(attr).innerHTML;
         }
         function startPage() {
-            let current = document.getElementById("current").innerHTML;
-            current = document.getElementById("what").innerHTML;
+            document.getElementById("current").innerHTML = document.getElementById("what").innerHTML;
         }
-
     </script>
 </html>
