@@ -15,7 +15,7 @@
                 background-color: #F5EDF0;
             }
             header, footer {
-                background-color: #A05C7B;
+                background-color: #8b4a67;
                 text-align: center;
                 margin-top: 0;
                 margin-left: -50vw;
@@ -42,7 +42,7 @@
             }
             p, ul {
                 font-family: Helvetica, sans-serif;
-                color: #A05C7B;
+                color: #8b4a67;
             }
             ul {
                 list-style-type: square;
@@ -54,7 +54,7 @@
                 color: #A9FDAC;
             }
             blockquote {
-                font-family: 'Courier New', Courier, monospace;
+                font-family: Courier, monospace;
                 color:#570000;
                 padding: 5px;
                 border-radius: 5px;
@@ -63,7 +63,7 @@
                 width: 50%;
                 text-align: center;
                 font-family: Helvetica, sans-serif;
-                color: #A05C7B;
+                color: #8b4a67;
                 margin: auto;
             }
             img {
@@ -89,7 +89,7 @@
                 width: 40%;
             }
             hr {
-                border: 2px dashed #A05C7B;
+                border: 2px dashed #8b4a67;
             }
             #who, #what, #where, #when, #why, #how, #prompts{
                 display: none;
@@ -108,6 +108,7 @@
     <body  onload="startPage()">
         <header>
             <h1>Natalia's Hobby Page</h1>
+            <p><i>"Channeling my pain into art since 2018"</i></p>
             <nav>
                 <p>
                 <a onclick="pageChange(this)" href="#who">Who</a> ♦︎
@@ -148,9 +149,15 @@
             <!--ID indicates the what section-->
             <section id="what">
                 <h2>My Hobby: Poetry</h2>
-                <p>Do I really need to tell you what poetry is? Well, sometimes people don't seem to get it. Poetry isn't just making things rhyme, or using a 7-5-7 syllable structure, or talking like Shakespeare. It CAN be those things, but it can also be basically whatever you want! Seriously, you can write almost anything and call it a poem. The only thing that distinguishes poems is that they typically break some of the rules of prose (normal writing). For example, poems are often symbolic rather than literal, intentionally misuse or ignore grammar and punctuation, and use unusual spacing and lines for emphasis.</p>
-                <p>Sometimes I see the sentiment that people who write poetry are scary, pretentious, or "performative". I don't think I'm any of those. Well, I like to think I'm not like that! I try to be friendly, I like pop music and bad movies (I watch <i>Eight Crazy Nights</i> every year), and I don't really show my writing to anyone these days.</p>
-                <p>Well... to contradict my last point, I want to show some of my poems here. Hey, it's my website!</p>
+                <p>Poetry isn't just making things rhyme, or using a 7-5-7 syllable structure, or talking like Shakespeare. It CAN be those things, but it can also be basically whatever you want! The only thing that distinguishes poems is that they typically break some of the rules of prose (normal writing). For example, poems are often symbolic rather than literal, intentionally misuse or ignore grammar and punctuation, and use unusual spacing and lines for emphasis.</p>
+                <p>Sometimes I see the sentiment that people who write poetry are scary, pretentious, or "performative". I don't think I'm any of those. Some people are shocked when I tell them this is my hobby.</p>
+                <figure>
+                    <img src="images/writing_pen.png" alt="fountain pen on paper with cursive writing">
+                    <figcaption>Some people write with fountain pens. Not me, though.<br>
+                        <i>Source: Andrys on Pixabay</i>
+                    </figcaption>
+                </figure>
+                <p>Here are some of my poems! They aren't my favorites, to be honest. My proudest ones are too personal to share.</p>
                     <blockquote>My parents made me go to church today<br>
                         But they gave Dum-Dums at the exit<br>
                         So maybe it was worth it<br>
@@ -161,12 +168,6 @@
                         5/12/24
                     </blockquote>
                     <hr>
-                    <figure>
-                        <img src="images/writing_pen.png">
-                        <figcaption>Some people write with fountain pens. Not me, though.<br>
-                            <i>Source: Andrys on Pixabay</i>
-                        </figcaption>
-                    </figure>
                     <blockquote>Quartz stalactites hang from my heart<br>
                         Amplifying energy, allegro agitato<br>
                         Through the otherworldly magic in my blood<br>
@@ -241,7 +242,7 @@
                         <i>Source: me</i>
                     </figcaption>
                 </figure>
-                <p>If I'm writing something that needs to rhyme, I'll use <a href="https://www.rhymezone.com/">RhymeZone</a> to help me. If a word doesn't sound right, I'll look up synonyms.</p>
+                <p>If I'm writing something that needs to rhyme, I'll use <a target="_blank" href="https://www.rhymezone.com/">RhymeZone</a> to help me. If a word doesn't sound right, I'll look up synonyms.</p>
                 <textarea rows="8" cols="65" placeholder="Write something right now!"></textarea>
             </section>
             <!--ID indicates the why section-->
@@ -260,7 +261,7 @@
                 <p><i>- "Jolene" by Dolly Parton</i></p>
                 <p>Imagine if Dolly had simply said <q>You're beautiful. You have brown hair, clear skin, and green eyes. Your smile is pretty and your voice is gentle. I'll never be as pretty as you, Jolene</q>. That wouldn't be nearly as effective!</p>
                 <figure>
-                    <img src="images/dolly_parton.jpg" alt="Dolly Parton in 2010">
+                    <img src="images/dolly_parton.jpg" alt="Dolly Parton holding an award">
                     <figcaption>Dolly Parton<br>
                         <i>Source: <a target="_blank" href="https://commons.wikimedia.org/wiki/File:Dolly_Parton_accepting_Liseberg_Applause_Award_2010_portrait.jpg">"Dolly Parton accepting Liseberg Applause Award 2010"</a> by Curtis Hilbun licensed under <a target="_blank" href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></i>
                     </figcaption>
@@ -268,14 +269,14 @@
             </section>
             <section id="prompts">
                 <h2>AI Prompts</h2>
+                <p>I did not use any AI prompts for this page. I used <a target="_blank" href="https://www.w3schools.com/jsref/">w3schools</a> to teach myself some JavaScript.</p>
             </section>
         </main>
         <footer>
-            <p><i>"The only kind of creative writing that I enjoy."</i></p>
             <a class="button-link" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fndudley2%2Fitis3135%2Fhobby%2F" target="_blank">HTML Validator</a>
             <a class="button-link" href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fndudley2%2Fitis3135%2Fhobby%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">CSS Validator</a>
             <a class="button-link" href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/ndudley2/itis3135/hobby/" target="_blank">Accessibility Validator</a>
-            <p>Site Designed By <a href="../nataliadudleydesigns.com/">Natalia Dudley Designs</a></p>
+            <p>Site Designed By <a target="_blank" href="../nataliadudleydesigns.com/">Natalia Dudley Designs</a></p>
             <p>Natalia Dudley ©2026</p>
         </footer>
         <script>
