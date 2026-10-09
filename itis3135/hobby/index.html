@@ -18,8 +18,8 @@
                 background-color: #8b4a67;
                 text-align: center;
                 margin-top: 0;
-                margin-left: -50vw;
-                margin-right: -50vw;
+                margin-left: calc(1000px-50vw);
+                margin-right: calc(1000px-50vw);
                 padding: 10px;
             }
             h1 {
@@ -141,9 +141,6 @@
             </nav>
         </header>
         <main>
-            <!--ID indicates the current section-->
-            <div id="current">
-            </div>
             <!--ID indicates the who section-->
             <section id="who">
                 <h2>About Me</h2>
@@ -292,8 +289,11 @@
                 <h2>AI Prompts</h2>
                 <p>I did not use any AI prompts for this page.</p>
                 <p>I used <a target="_blank" href="https://www.w3schools.com/jsref/">w3schools</a> to teach myself some JavaScript.</p>
-                <p>All pictures are my own or sourced from Pixabay or Wikimedia Commons</p>
+                <p>All pictures are my own or sourced from Pixabay or Wikimedia Commons.</p>
             </section>
+            <!--ID indicates the current section-->
+            <div id="current">
+            </div>
         </main>
         <footer>
             <!--buttons in a div so I can put them in a flexbox-->
