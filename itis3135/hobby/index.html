@@ -9,7 +9,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
         <style>
-            /* Embedded stylesheet */
+            /* Embedded stylesheet since this is a single page application */
             body {
                 max-width: 80%;
                 margin: auto;
@@ -19,8 +19,8 @@
                 background-color: #8b4a67;
                 text-align: center;
                 margin-top: 0;
-                margin-right: -20vw;
-                margin-left: -20vw;
+                margin-right: -20vh;
+                margin-left: -20vh;
                 padding-top: 10px;
                 padding-bottom: 10px;
             }
@@ -125,6 +125,10 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                }
+                header, footer {
+                    margin-right: 0;
+                    margin-left: 0;
                 }
                 figure {
                     width: 80%;
