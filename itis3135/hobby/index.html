@@ -8,8 +8,8 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
-        <!--Embedded stylesheet-->
         <style>
+            /* Embedded stylesheet */
             body {
                 max-width: 80%;
                 margin: auto;
@@ -66,7 +66,7 @@
                 text-align: center;
                 font-family: Tahoma, sans-serif;
                 color: #8b4a67;
-                margin: 5px, auto;
+                margin: 5px auto;
                 display: block;
             }
             img {
@@ -127,13 +127,22 @@
                     justify-content: space-around;
                 }
                 header, footer {
-                    background-color: #8b4a67;
-                    text-align: center;
-                    margin-top: 0;
                     margin-right: auto;
                     margin-left: auto;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                }
+                textarea {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    max-width: fit-content;
+                }
+                figure {
+                    width: 80%;
+                }
+                h1 {
+                    max-width: 50vw;
                 }
             }
         </style>
@@ -319,7 +328,7 @@
                 <p>I used <a target="_blank" href="https://www.w3schools.com/jsref/">w3schools</a> to teach myself some JavaScript.</p>
                 <p>All pictures are my own or sourced from Pixabay or Wikimedia Commons.</p>
             </section>
-            <!--ID indicates the current section-->
+            <!--ID indicates the current section. Cannot be a div because then h2s are flagged as "outside" a section-->
             <section id="current">
             </section>
         </main>
