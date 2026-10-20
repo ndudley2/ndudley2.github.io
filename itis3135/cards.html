@@ -9,6 +9,43 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+        <style>
+            #playing-cards {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .card {
+                display: flex;
+                justify-content: space-between;
+                width: 20px;
+                height: 60px;
+                background-color: #8BC9FF;
+                color: #3d4558;
+                font-family: 'Trebuchet MS', sans-serif;
+                border-color: #b6ff8b;
+                border-radius: 10px;
+            }
+            .left {
+                display: flex;
+                align-self: flex-start;
+            }
+            .middle {
+                display: flex;
+                align-self: center;
+                flex-direction: column;
+                width: 90%;
+            }
+            .right {
+                display: flex;
+                align-self: flex-end;
+            }
+            img {
+                width: 100%;
+            }
+        </style>
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
     </head>
@@ -16,7 +53,36 @@
         <div data-include="components/header.html"></div>
         <main>
             <h2>Cards</h2>
-            <p>This is my cards page</p>
+            <div class="card">
+                <div class="left">1</div>
+                <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <div class="right">1</div>
+            </div>
+            <div class="card">
+                <div class="left">2</div>
+                <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <div class="right">2</div>
+            </div>
+            <div class="card">
+                <div class="left">3</div>
+                <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <div class="right">3</div>
+            </div>
+            <div class="card">
+                <div class="left">Lotus</div>
+                <div class="middle"><img src="images/lotus-sketch.svg" alt="a drawing of a lotus"></div>
+                <div class="right">Lotus</div>
+            </div>
+            <div class="card">
+                <div class="left">Duck</div>
+                <div class="middle"><img src="images/duck-sketch.svg" alt="a sketch of a duck"></div>
+                <div class="right">Duck</div>
+            </div>
+            <div class="card">
+                <div class="left">Beetle</div>
+                <div class="middle"><img src="images/beetle_sketch.svg" alt="a sketch of a beetle"></div>
+                <div class="right">Beetle</div>
+            </div>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.min.js"></script>
