@@ -26,8 +26,6 @@
                 font-family: 'Trebuchet MS', sans-serif;
                 font-size: 2.5em;
                 margin: 20px;
-                border-color: #b6ff8b;
-                border-width: 5px;
                 border-radius: 10px;
             }
             .left {
@@ -46,7 +44,7 @@
                 align-self: flex-end;
             }
             main img {
-                width: 100%;
+                width: max-content;
             }
         </style>
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
@@ -54,36 +52,61 @@
     </head>
     <body>
         <div data-include="components/header.html"></div>
-        <main>
+        <!-- id indicates that the playing cards are in main. Allows me to treat cards like a flex display -->
+        <main id="playing-cards">
             <h2>Cards</h2>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">1</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">1</div>
             </div>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">2</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">2</div>
             </div>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">3</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"><img src="images/dragonfly_sketch.png" alt="a sketch of a dragonfly"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">3</div>
             </div>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">Lotus</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/lotus-sketch.svg" alt="a drawing of a lotus"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">Lotus</div>
             </div>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">Duck</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/duck-sketch.svg" alt="a sketch of a duck"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">Duck</div>
             </div>
+            <!-- Each div with the class "card" is a card -->
             <div class="card">
+                <!-- The upper left corner of the card -->
                 <div class="left">Beetle</div>
+                <!-- The middle of the card, where the images are -->
                 <div class="middle"><img src="images/beetle_sketch.svg" alt="a sketch of a beetle"></div>
+                <!-- The bottom right corner of the card -->
                 <div class="right">Beetle</div>
             </div>
         </main>
