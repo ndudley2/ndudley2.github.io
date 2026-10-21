@@ -67,16 +67,16 @@ button {
 }
 
 table {
-    background-image: linear-gradient(#b6ff8b, #8BC9FF);
-    color: #3d4558;
     font-family: 'Trebuchet MS', sans-serif;
+    margin: auto;
+}
+
+th {
+    color: #dcb0ff;
 }
 
 td {
     border:2px solid #3d4558;
     color: #3d4558;
-}
-
-#five {
-    background-image: radial-gradient(#fff7c8, #b6ff8b);
+    background-image: linear-gradient(#b6ff8b, #8BC9FF);
 }
