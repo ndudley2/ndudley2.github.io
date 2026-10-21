@@ -47,3 +47,14 @@ h6 {
 hr {
     border: 2px dotted #8BC9FF;
 }
+
+textarea {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color:  #dcb0ff;
+    background-color: #3d4558;
+    border: 1px solid #8BC9FF;
+}
+
+form {
+    color: #dcb0ff;
+}
