@@ -56,5 +56,11 @@ textarea {
 }
 
 form {
+    font-family: "Lucida Console", "Courier New", monospace;
     color: #dcb0ff;
+}
+
+input {
+    background-color: #3d4558;
+    border: 1px solid #8BC9FF;
 }
