@@ -48,19 +48,20 @@ hr {
     border: 2px dotted #8BC9FF;
 }
 
-textarea {
-    font-family: "Lucida Console", "Courier New", monospace;
-    color:  #dcb0ff;
-    background-color: #3d4558;
-    border: 1px solid #8BC9FF;
-}
-
 form {
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Trebuchet MS', sans-serif;
     color: #dcb0ff;
 }
 
-input {
+input, select, textarea {
     background-color: #3d4558;
     border: 1px solid #8BC9FF;
+    color: #dcb0ff;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+button {
+    background-color: #8BC9FF;
+    color: #3d4558
+
 }

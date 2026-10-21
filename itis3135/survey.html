@@ -17,32 +17,44 @@
         <main>
             <h2>Survey</h2>
             <p>This is my survey page</p>
-            <form id="survey-form">
-                <label id="name-label" for="#name">Name:</label>
-                <input type="text" id="name" required placeholder="Johnny Appleseed"></input>
-                <label id="email-label" for="#email">Email:</label>
-                <input type="email" id="email" placeholder="example@gmail.com" required></input>
-                <label id="number-label" for="#number">Age:</label>
-                <input type="number" id="number" min="3" max="120" placeholder="21"></input>
-                <label id="dropdown-label" for="dropdown">What year are you?</label>
+            <form>
+                <!-- id is used to identify what the input is for -->
+                <input type="text" id="name" required placeholder="Johnny Appleseed">
+                <label for="#name">Name:</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+                <label for="#email">Email:</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="number" id="number" min="3" max="120" placeholder="21">
+                <label for="#number">Age:</label>
+                <!-- id is used to identify what the input is for -->
                 <select id="dropdown">
                     <option>Freshman</option>
                     <option>Sophomore</option>
                     <option>Junior</option>
                     <option>Senior</option>
                 </select>
+                <label for="dropdown">What year are you?</label>
                 <p>Do you like waffles?</p>
-                <input type="radio" id="yes" value="yes" name="yesno"></input>
-                <label id="yes-label" for="yes">Yes</label>
-                <input type="radio" id="no" name="yesno" value="no"></input>
-                <label id="yes-label" for="no">No</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="radio" id="yes" value="yes" name="yesno">
+                <label for="yes">Yes</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="radio" id="no" name="yesno" value="no">
+                <label for="no">No</label>
                 <p>Pizza toppings:</p>
-                <input type="checkbox" value="pepperoni">Pepperoni</input>
-                <input type="checkbox" value="mushrooms">Mushrooms</input>
-                <input type="checkbox" value="olives">Olives</input>
+                <!-- id is used to identify what the input is for -->
+                <input type="checkbox" id="topping1" value="pepperoni">
+                <label for="topping1">Pepperoni</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="checkbox" id="topping2" value="mushrooms">
+                <label for="topping2">Mushrooms</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="checkbox" id="topping3" value="olives">
+                <label for="topping3">Olives</label>
                 <p>Tell me a joke:</p>
                 <textarea rows="5" cols="40" placeholder="Did you hear about the child psychic who escaped from jail? She's a small medium at large..."></textarea>
-                <button type="submit" id="submit"></button>
+                <button type="submit" id="submit">Submit</button>
             </form>
         </main>
         <div data-include="components/footer.html"></div>
