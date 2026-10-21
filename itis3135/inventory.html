@@ -17,6 +17,52 @@
         <main>
             <h2>Inventory</h2>
             <p>This is my inventory page</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="read">
+                        <td>2001: A Space Odyssey</td>
+                        <td>Arthur C. Clarke</td>
+                        <td>Science Fiction</td>
+                        <td><span class="status">Read</span></td>
+                        <td>
+                            <span class="rate five">
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="to-read">
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>Fiction</td>
+                        <td><span class="status">To Read</span></td>
+                        <td>
+                            <span class="rate none">
+                                <p>No rating yet...</p>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="in-progress">
+                        <td>Battle Angel Alita Vol. 1</td>
+                        <td>Yukito Kishiro</td>
+                        <td>Manga</td>
+                        <td><span class="status">In Progress</span></td>
+                        <td>
+                            <span class="rate">
+                                <p>⭐⭐⭐⭐</p>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.min.js"></script>
