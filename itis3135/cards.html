@@ -11,8 +11,8 @@
         <link rel="manifest" href="/site.webmanifest">
         <style>
             #playing-cards {
-                display: flex;
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: auto auto auto;
                 justify-content: center;
                 flex-direction: row;
             }
@@ -45,7 +45,8 @@
                 align-self: flex-end;
             }
             main img {
-                width: 100%
+                width: 100%;
+                margin-bottom: 5px;
             }
         </style>
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
@@ -55,8 +56,7 @@
         <div data-include="components/header.html"></div>
         <!-- id indicates that the playing cards are in main. Allows me to treat cards like a flex display -->
         <main id="playing-cards">
-            <h2>Cards</h2>
-            <br>
+            <h2>Cards</h2>            
             <!-- Each div with the class "card" is a card -->
             <div class="card">
                 <!-- The upper left corner of the card -->
