@@ -11,8 +11,8 @@
         <link rel="manifest" href="/site.webmanifest">
         <style>
             #playing-cards {
-                display: grid;
-                grid-template-columns: auto auto auto;
+                display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
                 flex-direction: row;
             }
@@ -54,9 +54,10 @@
     </head>
     <body>
         <div data-include="components/header.html"></div>
-        <!-- id indicates that the playing cards are in main. Allows me to treat cards like a flex display -->
-        <main id="playing-cards">
-            <h2>Cards</h2>            
+        <main>
+            <h2>Cards</h2>
+            <!-- This div contains the cards, allowing the cards to be in a flex display -->
+            <div id="playing-cards">
             <!-- Each div with the class "card" is a card -->
             <div class="card">
                 <!-- The upper left corner of the card -->
@@ -110,6 +111,7 @@
                 <div class="middle"><img src="images/beetle_sketch.svg" alt="a sketch of a beetle"></div>
                 <!-- The bottom right corner of the card -->
                 <div class="right">🪲</div>
+            </div>
             </div>
         </main>
         <div data-include="components/footer.html"></div>
