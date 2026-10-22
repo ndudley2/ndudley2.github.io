@@ -49,7 +49,7 @@ hr {
     border: 2px dotted #8BC9FF;
 }
 
-form {
+form, label {
     font-family: 'Trebuchet MS', sans-serif;
     color: #dcb0ff;
 }

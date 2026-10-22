@@ -17,9 +17,11 @@
         <main>
             <h2>Product</h2>
             <nav>
-                <a href="#about">About</a>
-                <a href="#feedback">Feedback</a>
+                <p>
+                <a href="#about">About</a> |
+                <a href="#feedback">Feedback</a> |
                 <a href="#email-form">Sign Up</a>
+                </p>
             </nav>
             <section id="about">
                 <h3>Donuts!</h3>
@@ -38,14 +40,18 @@
                 <label for="textarea">Tell us how you feel about donuts:</label>
                 <!-- id is used to identify what the input is for -->
                 <textarea id="textarea" rows="5" cols="40" placeholder="I like..."></textarea>
-                <button type="submit" id="submit">Submit</button>
+                <!-- id is used to identify what the input is for -->
+                <button type="submit" id="submit-feedback">Submit</button>
             </section>
             <section id="email-form">
                 <h3>Stay Updated</h3>
                 <p>Join our email list to recieve special donut news.</p>
                 <form>
-                    <input id="email" name ="email" type="email" placeholder="email@website.com"></input>
-                    <input id="submit" type="submit"></input>
+                    <label for="email">Email:</label>
+                    <!-- id is used to identify what the input is for -->
+                    <input id="email" name ="email" type="email" placeholder="email@website.com">
+                    <!-- id is used to identify what the input is for -->
+                    <input id="submit-email" type="submit">
                 </form>
             </section>
         </main>
