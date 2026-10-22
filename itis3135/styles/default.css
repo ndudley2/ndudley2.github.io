@@ -80,3 +80,13 @@ td {
     color: #3d4558;
     background-image: linear-gradient(#b6ff8b, #8BC9FF);
 }
+
+fieldset {
+    border-color: #8BC9FF;
+}
+
+legend {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #3d4558;
+    color: #8BC9FF
+}
