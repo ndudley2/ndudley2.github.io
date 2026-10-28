@@ -9,9 +9,25 @@ a:link {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-h2, h3, h4, p, ul, ol, li, blockquote, figure {
+p, ul, ol, li, blockquote, figure {
     color: #dcb0ff;
     font-family: 'Trebuchet MS', sans-serif;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.7em;
+    color: #8BC9FF;
+}
+h3 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #8BC9FF;
+    font-size: 1.5rem;
+}
+h4 {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #8BC9FF;
+    font-size: 1.3rem;
 }
 
 h1 {
