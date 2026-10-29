@@ -9,6 +9,32 @@
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="site.webmanifest">
+        <style>
+            .donuts-downsized{
+                width: 475px;
+            }
+            #donuts-improper-height{
+                width: 475px;
+                height: 211px;
+            }
+            #donuts-improper-width {
+                width: 317px;
+                height: 317px;
+            }
+            .face-downsized {
+                width: 232px;
+            }
+            #face-improper-height{
+                width: 232px;
+                height: 206px
+            }
+            #face-improper-width{
+                width: 155px;
+                height: 309px
+
+            }
+
+        </style>
         <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
     </head>
@@ -30,42 +56,42 @@
                 <article>
                     <h4>Downsizing With CSS</h4>
                     <figure>
-                        <!-- Inline CSS style for downsizing image-->
-                        <img src="images/donuts@ana_lourenco_pexels.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 475px;">
+                        <!-- class to shrink size to 475 x 317 in the embedded stylesheet-->
+                        <img src="images/donuts@ana_lourenco_pexels.jpg" alt="a close-up of nine frosted donuts on a metal table" class="donuts-downsized">
                         <figcaption>The image at around 10% of its original size, downsized with CSS.</figcaption>
                     </figure>
                 </article>
                 <article>
-                    <!-- Inline CSS style to preserve size -->
                     <h4>Downsizing With Editor</h4>
                     <figure>
-                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 475px;">
+                        <!-- class to preserve size at 475 x 317 in the embdedded stylesheet -->
+                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" class="donuts-downsized">
                         <figcaption>The image at around 10% of its original size, downsized in an editor.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h4>Improper Proportions</h4>
                     <figure>
-                        <!-- Inline CSS style to reduce height -->
-                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 475px; height: 211px;">
+                        <!-- id to shrink height in the embdedded stylesheet -->
+                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" id="donuts-improper-height">
                         <figcaption>Resized image with the height 33% smaller.</figcaption>
                     </figure>
                     <figure>
-                        <!-- Inline CSS style to reduce width -->
-                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 317px; height: 317px;">
+                        <!-- id to shrink width in the embdedded stylesheet -->
+                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" id="donuts-improper-width">
                         <figcaption>Resized image with the width 33% smaller.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h4>Improper Enlarging With CSS</h4>
                     <figure>
-                        <!-- Inline CSS style to make sure images are the same size -->
-                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 475px;">
+                        <!-- class to preserve size at 475 x 317 in the embdedded stylesheet -->
+                        <img src="images/donuts@ana_lourenco_pexels_475_x_317.jpg" alt="a close-up of nine frosted donuts on a metal table" class="donuts-downsized">
                         <figcaption>The resized image at 475x317 pixels.</figcaption>
                     </figure>
                     <figure>
-                        <!-- Inline CSS style to enlarge image -->
-                        <img src="images/donuts@ana_lourenco_pexels_475_x_317_25.jpg" alt="a close-up of nine frosted donuts on a metal table" style="width: 475px;">
+                        <!-- class to increase size to 475 x 317 in the embdedded stylesheet -->
+                        <img src="images/donuts@ana_lourenco_pexels_475_x_317_25.jpg" alt="a close-up of nine frosted donuts on a metal table" class="donuts-downsized">
                         <figcaption>The resized image sized down 25% and scaled back up to 475x317 pixels.</figcaption>
                     </figure> 
                 </article>
@@ -83,43 +109,43 @@
                 </article>
                 <article>
                     <h4>Downsizing With CSS</h4>
-                    <!-- Inline CSS style for downsizing image-->
                     <figure>
-                        <img src="images/face-next-to-jar-lid.jpeg" alt ="portrait of a person holding a jar lid" style="width: 232px;">
+                        <!-- class to shrink size to 232 x 309 in the embedded stylesheet-->
+                        <img src="images/face-next-to-jar-lid.jpeg" alt ="portrait of a person holding a jar lid" class="face-downsized">
                         <figcaption>The image at around 10% of its original size, downsized with CSS.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h4>Downsizing With Editor</h4>
                     <figure>
-                        <!-- Inline CSS style to preserve size -->
-                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" style="width: 232px;">
+                        <!-- class to preserve size at 232 x 309 in the embedded stylesheet-->
+                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" class="face-downsized">
                         <figcaption>The image at around 10% of its original size, downsized in an editor.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h4>Improper Proportions</h4>
                     <figure>
-                        <!-- Inline CSS style to reduce height -->
-                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" style="width: 232px; height: 206px">
+                        <!-- id to shrink height in the embdedded stylesheet -->
+                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" id="face-improper-height">
                         <figcaption>Resized image with the height 33% smaller.</figcaption>
                     </figure>
                     <figure>
-                        <!-- Inline CSS style to reduce width -->
-                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" style="width: 155px; height: 309px">
+                        <!-- id to shrink width in the embdedded stylesheet -->
+                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" id="face-improper-width">
                         <figcaption>Resized image with the width 33% smaller.</figcaption>
                     </figure>
                 </article>
                 <article>
                     <h4>Improper Enlarging With CSS</h4>
                     <figure>
-                        <!-- Inline CSS style to make sure images are the same size -->
-                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" style="width: 232px;">
+                        <!-- class to preserve size at 232 x 309 in the embedded stylesheet-->
+                        <img src="images/face-next-to-jar-lid-232-x-309.jpg" alt="portrait of a person holding a jar lid" class="face-downsized">
                         <figcaption>The resized image at 232x309 pixels.</figcaption>
                     </figure>
                     <figure>
-                        <!-- Inline CSS style to enlarge image -->
-                        <img src="images/face-next-to-jar-lid-232-x-309_25.jpg" alt="portrait of a person holding a jar lid" style="width: 232px;">
+                        <!-- class to increase size to 232 x 309 in the embedded stylesheet-->
+                        <img src="images/face-next-to-jar-lid-232-x-309_25.jpg" alt="portrait of a person holding a jar lid" class="face-downsized">
                         <figcaption>The resized image sized down 25% and scaled back up to 232x309 pixels.</figcaption>
                     </figure> 
                 </article>

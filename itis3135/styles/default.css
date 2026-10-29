@@ -36,7 +36,13 @@ h1 {
     text-align: center;
 }
 
-img {
+img{
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+header img {
     width: 20%;
     height: auto;
 }
@@ -46,7 +52,6 @@ header, footer {
     text-align: center;
 }
 
-
 h6 {
     display: block;
     font-size: large;
@@ -55,6 +60,10 @@ h6 {
 }
 
 @media only screen and (orientation:portrait) {
+    header img {
+        width: 50%;
+        height: auto;
+    }
     img {
         width: 80%;
         height: auto;
