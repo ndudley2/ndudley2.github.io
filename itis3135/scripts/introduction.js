@@ -1,16 +1,10 @@
 document
-  .querySelector("button[type='button']")
+  .querySelector("#clear")
   .addEventListener("click", function (event) {
     Array.from(document.querySelectorAll("form input")).forEach((input) => {
       input.value = "";
     });
   });
-
-const clearButton = document.querySelector("button[type='button']");
-const inputElements = Array.from(document.querySelectorAll("form input"));
-clearButton.addEventListener("click", function () {
-  inputs.forEach((input) => (input.value = ""));
-});
 
 
 const formElement = document.getElementById("form");

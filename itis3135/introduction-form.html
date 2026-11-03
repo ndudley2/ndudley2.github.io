@@ -16,7 +16,7 @@
         <div data-include="components/header.html"></div>
         <main>
             <h2>Introduction Form</h2>
-            <h3>Please submit the form below</h3>
+            <h3>Please Submit The Form Below</h3>
             <form>
                 <label for="first-name">First Name:</label>
                 <!-- id is used to identify what the input is for -->
@@ -58,6 +58,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="file" id="picture" required>
                 <button type="button" onclick="loadImage()">Click here to load</button>
+                <!-- this div is where the image shows up after loaded -->
                 <div id="loadImage"></div>
 
                 <label for="caption">Picture Caption:</label>
@@ -87,9 +88,9 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="computer-2" required value="I can borrow a computer from the library and work in the library or at home">
 
-                <legend>For each course you're taking, enter the department, number, name, and reason for taking the course.</legend>
+                <p>For each course you're taking, enter the department, number, name, and reason for taking the course.</p>
 
-                <legend>Course 1:</legend>
+                <p>Course 1:</p>
                 <label for="department-1">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-1" required value="ITIS">
@@ -103,7 +104,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="reason-1" required value="Required for my concentration">
 
-                <legend>Course 2:</legend>
+                <p>Course 2:</p>
                 <label for="department-2">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-2" value="ITSC">
@@ -117,7 +118,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="reason-2" value="Required for my major, honors course">
 
-                <legend>Course 3:</legend>
+                <p>Course 3:</p>
                 <label for="department-3">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-3" value="ITSC">
@@ -131,7 +132,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="reason-3" value="Required for my major">
 
-                <legend>Course 4:</legend>
+                <p>Course 4:</p>
                 <label for="department-4">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-4" value="MATH">
@@ -145,7 +146,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="reason-4" value="Required for my major">
 
-                <legend>Course 5:</legend>
+                <p>Course 5:</p>
                 <label for="department-5">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-5" value="ITIS">
@@ -159,7 +160,7 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="reason-5" value="Required for my concentration">
 
-                <legend>Course 6:</legend>
+                <p>Course 6:</p>
                 <label for="department-6">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="department-6">
@@ -215,7 +216,8 @@
                 
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
-                <button type="button">Clear</button>
+                <!-- id identifies the clear button -->
+                <button type="button" id="clear">Clear</button>
             </form>
         </main>
         <div data-include="components/footer.html"></div>
