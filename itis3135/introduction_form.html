@@ -18,48 +18,52 @@
             <h2>Introduction Form</h2>
             <h3>Please Submit The Form Below</h3>
             <form>
-                <label for="first-name">First Name:</label>
+                <label for="firstName">First Name:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="first-name" value="Natalia" required>
+                <input type="text" id="firstName" value="Natalia" required>
 
-                <label for="middle-name">Middle Name:</label>
+                <label for="middleName">Middle Name:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="middle-name" value="Lisette">
+                <input type="text" id="middleName" value="Lisette">
 
                 <label for="nickname">Nickname:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="nickname" value="Didi">
 
-                <label for="last-name">Last Name:</label>
+                <label for="lastName">Last Name:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="last-name" value="Dudley" required>
+                <input type="text" id="lastName" value="Dudley" required>
 
                 <label for="acknowledgment">Acknowledgment Statement:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="acknowledgment" required value="I understand that this is a public document, and I won’t put anything here I wouldn’t want anyone to see.">
 
-                <label for="date">Acknowledgment Date:</label>
+                <label for="acknowledgmentDate">Acknowledgment Date:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="date" required value="2026-08-24">
+                <input type="text" id="acknowledgmentDate" required value="2026-08-24">
 
-                <label for="adjective">Mascot Adjective:</label>
+                <label for="adjectives">Mascot Adjective:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="adjective" value="Nice" required>
+                <input type="text" id="adjectives" value="Nice" required>
 
                 <label for="animal">Mascot Animal:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="animal" value="Dragonfly" required>
 
-                <label for="divider">Divider:</label>
+                <label for="prettyNameDivider">Divider:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="divider" value="|" required>
+                <input type="text" id="prettyNameDivider" value="|" required>
 
-                <label for="picture">Picture:</label>
+                <label for="img">Picture:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="file" id="picture" required>
+                <input type="file" id="img" required>
                 <button type="button" onclick="loadImage()">Click here to load</button>
                 <!-- this div is where the image shows up after loaded -->
                 <div id="loadImage"></div>
+
+                <label for="pictureAlt">Picture Alt Text:</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="text" id="pictureAlt" value="portrait of myself" required>
 
                 <label for="caption">Picture Caption:</label>
                 <!-- id is used to identify what the input is for -->
@@ -69,126 +73,60 @@
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="statement" value="Hello! My name is Natalia Dudley. I’m 20 years old and in my third year at UNC Charlotte. I’m a computer science major with a concentration in software engineering." required>
 
-                <label for="personal">Personal Background:</label>
+                <label for="personalBackground">Personal Background:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="personal" required value="I grew up in a town called Wheaton in the Chicago suburbs. My family moved to Holly Springs, North Carolina, in 2021, when I was in my sophomore year of high school. I’ll never get used to the weather here!">
-                <label for="professional">Professional Background:</label>
+                <input type="text" id="personalBackground" required value="I grew up in a town called Wheaton in the Chicago suburbs. My family moved to Holly Springs, North Carolina, in 2021, when I was in my sophomore year of high school. I’ll never get used to the weather here!">
+                <label for="professionalBackground">Professional Background:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="professional" required value="I’m a tutor here at UNC Charlotte.">
-                <label for="academic">Academic Background:</label>
+                <input type="text" id="professionalBackground" required value="I’m a tutor here at UNC Charlotte.">
+                <label for="academicBackground">Academic Background:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="academic" required value="Computer Science, Spring 2028">
-                <label for="computer">Primary Work Computer:</label>
+                <input type="text" id="academicBackground" required value="Computer Science, Spring 2028">
+                <label for="primaryWorkComputer">Primary Work Computer:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="computer" required value="Acer Swift SFG16-72T with Microsoft Windows 11 Home">
-                <label for="location">Primary Work Location:</label>
+                <input type="text" id="primaryWorkComputer" required value="Acer Swift SFG16-72T with Microsoft Windows 11 Home">
+                <label for="primaryWorkLocation">Primary Work Location:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="location" required value="Popp Martin Student Union">
-                <label for="computer-2">Alternate Computer & Location:</label>
+                <input type="text" id="primaryWorkLocation" required value="Popp Martin Student Union">
+                <label for="alternateComputerLocation">Alternate Computer & Location:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="computer-2" required value="I can borrow a computer from the library and work in the library or at home">
+                <input type="text" id="alternateComputerLocation" required value="I can borrow a computer from the library and work in the library or at home">
 
-                <p>For each course you're taking, enter the department, number, name, and reason for taking the course.</p>
+                <fieldset>
+                <legend>Courses I'm Taking and Why:</legend>
 
                 <p>Course 1:</p>
-                <label for="department-1">Course Department:</label>
+                <label for="department">Course Department:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-1" required value="ITIS">
-                <label for="number-1">Course Number:</label>
+                <input type="text" id="department" required value="ITIS">
+                <label for="courseNumber">Course Number:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-1" required value="3135">
-                <label for="name-1">Course Name:</label>
+                <input type="text" id="courseNumber" required value="3135">
+                <label for="courseTitle">Course Name:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-1" required value="Front-End Web Application Development">
-                <label for="reason-1">Reason:</label>
+                <input type="text" id="courseTitle" required value="Front-End Web Application Development">
+                <label for="reasonForTaking">Reason:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-1" required value="Required for my concentration">
+                <input type="text" id="reasonForTaking" required value="Required for my concentration">
 
-                <p>Course 2:</p>
-                <label for="department-2">Course Department:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-2" value="ITSC">
-                <label for="number-2">Course Number:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-2" value="3688">
-                <label for="name-2">Course Name:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-2" value="Computing and AI: Ethics, Society & Communication">
-                <label for="reason-2">Reason:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-2" value="Required for my major, honors course">
+                <button type="button" onclick="addCourse()"></button>
 
-                <p>Course 3:</p>
-                <label for="department-3">Course Department:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-3" value="ITSC">
-                <label for="number-3">Course Number:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-3" value="2175">
-                <label for="name-3">Course Name:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-3" value="Logic and Algorithms">
-                <label for="reason-3">Reason:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-3" value="Required for my major">
-
-                <p>Course 4:</p>
-                <label for="department-4">Course Department:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-4" value="MATH">
-                <label for="number-4">Course Number:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-4" value="2164">
-                <label for="name-4">Course Name:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-4" value="Matrices & Linear Algebra">
-                <label for="reason-4">Reason:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-4" value="Required for my major">
-
-                <p>Course 5:</p>
-                <label for="department-5">Course Department:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-5" value="ITIS">
-                <label for="number-5">Course Number:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-5" value="3310">
-                <label for="name-5">Course Name:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-5" value="Software Architecture & Design">
-                <label for="reason-5">Reason:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-5" value="Required for my concentration">
-
-                <p>Course 6:</p>
-                <label for="department-6">Course Department:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="department-6">
-                <label for="number-6">Course Number:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="number-6">
-                <label for="name-6">Course Name:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="name-6">
-                <label for="reason-6">Reason:</label>
-                <!-- id is used to identify what the input is for -->
-                <input type="text" id="reason-6">
 
                 <label for="quote">Quote:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="quote" required value="Lose yourself to dance!">
 
-                <label for="quote-author">Quote Author:</label>
+                <label for="quoteAuthor">Quote Author:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="quote-author" required value="Pharrell Williams">
+                <input type="text" id="quoteAuthor" required value="Pharrell Williams">
 
-                <label for="funny">Funny Thing:</label>
+                <label for="funnyItem">Funny Thing:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="funny">
+                <input type="text" id="funnyItem">
 
-                <label for="extra">Something I'd like to share:</label>
+                <label for="somethingToShare">Something I'd like to share:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="extra">
+                <input type="text" id="somethingToShare">
 
                 <label for="clt-web">CLT Web:</label>
                 <!-- id is used to identify what the input is for -->
