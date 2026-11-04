@@ -23,10 +23,10 @@ function addCourse() {
     document.getElementById('course' + coursenum).innerHTML = document.getElementById("course1").innerHTML;
 }
 
-function removeCourse() {
-    if (coursenum > 1){
-        const attr = element.getAttribute("id").slice(9);
-            document.getElementById("course" + attr).innerHTML = '';
-            coursenum -= 1;
-    }
-}
+// function removeCourse() {
+//     if (coursenum > 1){
+//         const attr = element.getAttribute("id").slice(9);
+//             document.getElementById("course" + attr).innerHTML = '';
+//             coursenum -= 1;
+//     }
+// }
