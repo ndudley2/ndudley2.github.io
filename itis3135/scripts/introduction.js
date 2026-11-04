@@ -1,15 +1,3 @@
-document
-  .querySelector("#clear")
-  .addEventListener("click", function (event) {
-    Array.from(document.querySelectorAll("form input")).forEach((input) => {
-      input.value = "";
-    });
-  });
-
-
-const formElement = document.querySelector("form");
-formElement.addEventListener("submit", (e) => e.preventDefault()); // prevents page refresh / default behavior
-
 function loadImage(){
     var image = document.getElementById('img').files[0];
     const imageURL = URL.createObjectURL(image);
@@ -93,7 +81,7 @@ function getFormData() {
       department,
       courseNumber,
       courseTitle,
-      reasonForTaking,
+      reasonForTaking
     }));
 
   return {
@@ -129,27 +117,9 @@ function getFormData() {
       { label: "GitHub", url: value("github") },
       { label: "freeCodeCamp", url: value("fcc") },
       { label: "Codecademy", url: value("codecademy") },
-      { label: "LinkedIn", url: value("linkedin") },
-    ],
+      { label: "LinkedIn", url: value("linkedin") }
+    ]
   };
-}
-
-function createHtmlOutput(data) {
-  const outputDocument = document.implementation.createHTMLDocument("Introduction Data");
-  outputDocument.documentElement.lang = "en";
-
-  const charset = outputDocument.createElement("meta");
-  charset.setAttribute("charset", "UTF-8");
-  outputDocument.head.prepend(charset);
-
-  const main = outputDocument.createElement("main");
-  const title = outputDocument.createElement("h1");
-  title.textContent = "Introduction Data";
-  main.appendChild(title);
-  appendHtmlData(main, data);
-  outputDocument.body.appendChild(main);
-
-  return `<!DOCTYPE html>\n${outputDocument.documentElement.outerHTML}`;
 }
 
 function appendHtmlData(parent, data) {
@@ -185,17 +155,6 @@ function appendHtmlData(parent, data) {
   );
 }
 
-function createXmlOutput(data) {
-  const outputDocument = document.implementation.createDocument(null, "introduction");
-  const root = outputDocument.documentElement;
-
-  Object.entries(data).forEach(([key, value]) => {
-    appendXmlData(outputDocument, root, key, value);
-  });
-
-  return `<?xml version="1.0" encoding="UTF-8"?>\n${new XMLSerializer().serializeToString(outputDocument)}`;
-}
-
 function appendXmlData(outputDocument, parent, key, value) {
   if (Array.isArray(value)) {
     const itemName = key.endsWith("s") ? key.slice(0, -1) : "item";
@@ -213,3 +172,74 @@ function appendXmlData(outputDocument, parent, key, value) {
   }
   parent.appendChild(element);
 }
+
+function createHtmlOutput(data) {
+  const outputDocument = document.implementation.createHTMLDocument("Introduction Data");
+  outputDocument.documentElement.lang = "en";
+
+  const charset = outputDocument.createElement("meta");
+  charset.setAttribute("charset", "UTF-8");
+  outputDocument.head.prepend(charset);
+
+  const main = outputDocument.createElement("main");
+  const title = outputDocument.createElement("h1");
+  title.textContent = "Introduction Data";
+  main.appendChild(title);
+  appendHtmlData(main, data);
+  outputDocument.body.appendChild(main);
+
+  return `<!DOCTYPE html>\n${outputDocument.documentElement.outerHTML}`;
+}
+
+function createXmlOutput(data) {
+  const outputDocument = document.implementation.createDocument(null, "introduction");
+  const root = outputDocument.documentElement;
+
+  Object.entries(data).forEach(([key, value]) => {
+    appendXmlData(outputDocument, root, key, value);
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n${new XMLSerializer().serializeToString(outputDocument)}`;
+}
+
+function showGeneratedOutput(format) {
+  const data = getFormData();
+  const output = document.getElementById("generatedOutput");
+  const heading = document.getElementById("outputHeading");
+
+  if (format === "html") {
+    heading.textContent = "Generated HTML";
+    output.textContent = createHtmlOutput(data);
+  } else if (format === "xml") {
+    heading.textContent = "Generated XML";
+    output.textContent = createXmlOutput(data);
+  } else {
+    heading.textContent = "Generated JSON";
+    output.textContent = JSON.stringify(data, null, 2);
+  }
+
+  document.getElementById("generatedOutputSection").hidden = false;
+}
+
+document.getElementById("generateHtml").addEventListener("click", () => {
+  showGeneratedOutput("html");
+});
+
+document.getElementById("generateXml").addEventListener("click", () => {
+  showGeneratedOutput("xml");
+});
+
+document.getElementById("generateJson").addEventListener("click", () => {
+  showGeneratedOutput("json");
+});
+
+document
+  .querySelector("#clear")
+  .addEventListener("click", function () {
+    Array.from(document.querySelectorAll("form input")).forEach((input) => {
+      input.value = "";
+    });
+  });
+
+const formElement = document.querySelector("form");
+formElement.addEventListener("submit", (event) => event.preventDefault());
