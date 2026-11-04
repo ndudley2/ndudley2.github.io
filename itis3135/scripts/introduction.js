@@ -73,7 +73,7 @@ function getFormData() {
       academicBackground: value("academicBackground"),
       primaryWorkComputer: value("primaryWorkComputer"),
       primaryWorkLocation: value("primaryWorkLocation"),
-      alternateComputerLocation: value("alternateComputerLocation"),
+      alternateComputerLocation: value("alternateComputerLocation")
     },
     courses,
     quote: value("quote"),
