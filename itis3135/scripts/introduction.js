@@ -178,7 +178,11 @@ function appendHtmlData(parent, data) {
     return;
   }
 
-  parent.appendChild(parent.ownerDocument.createTextNode(String(data ?? "")));
+  parent.appendChild(
+    parent.ownerDocument.createTextNode(
+      String(data === null || data === undefined ? "" : data)
+    )
+  );
 }
 
 function createXmlOutput(data) {
