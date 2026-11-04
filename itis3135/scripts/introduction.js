@@ -38,37 +38,6 @@ function deleteCourse(button) {
   button.parentElement.replaceChildren();
 }
 
-document.getElementById("generateHtml").addEventListener("click", () => {
-  showGeneratedOutput("html");
-});
-
-document.getElementById("generateXml").addEventListener("click", () => {
-  showGeneratedOutput("xml");
-});
-
-document.getElementById("generateJson").addEventListener("click", () => {
-  showGeneratedOutput("json");
-});
-
-function showGeneratedOutput(format) {
-  const data = getFormData();
-  const output = document.getElementById("generatedOutput");
-  const heading = document.getElementById("outputHeading");
-
-  if (format === "html") {
-    heading.textContent = "Generated HTML";
-    output.textContent = createHtmlOutput(data);
-  } else if (format === "xml") {
-    heading.textContent = "Generated XML";
-    output.textContent = createXmlOutput(data);
-  } else {
-    heading.textContent = "Generated JSON";
-    output.textContent = JSON.stringify(data, null, 2);
-  }
-
-  document.getElementById("generatedOutputSection").hidden = false;
-}
-
 function getFormData() {
   const value = (id) => document.getElementById(id).value;
   const imageFile = document.getElementById("img").files[0];
