@@ -20,7 +20,7 @@ function loadImage(){
 const courseTemplate = document.getElementById("course1").cloneNode(true);
 
 function addCourse() {
-  const nextCourseNumber = [2, 3, 4, 5, 6].find((number) =>
+  const nextCourseNumber = [1, 2, 3, 4, 5, 6].find((number) =>
     document.getElementById(`course${number}`).childElementCount === 0
   );
 
