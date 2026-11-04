@@ -87,7 +87,7 @@ input, select, textarea {
 }
 
 button {
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: #8BC9FF;
     color: #3d4558;
 }
