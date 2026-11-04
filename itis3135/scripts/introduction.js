@@ -17,9 +17,14 @@ function loadImage(){
     document.getElementById('loadImage').innerHTML = text;
 }
 
+coursenum = 1;
 function addCourse() {
-    const container = document
-    .getElementById('container');
-    container
-        .innerHTML += '<label for="department">Course Department:</label><!-- id is used to identify what the input is for --><input type="text" id="department" required value="ITIS"><label for="courseNumber">Course Number:</label><!-- id is used to identify what the input is for --><input type="text" id="courseNumber" required value="3135"><label for="courseTitle">Course Name:</label><!-- id is used to identify what the input is for --><input type="text" id="courseTitle" required value="Front-End Web Application Development"><label for="reasonForTaking">Reason:</label><!-- id is used to identify what the input is for --><input type="text" id="reasonForTaking" required value="Required for my concentration"></input>';
+    coursenum += 1;
+    document.getElementById("course" + coursenum).innerHTML = '<label for="department">Course Department:</label><!-- id is used to identify what the input is for --><input type="text" id="department" required value="ITIS"><label for="courseNumber">Course Number:</label><!-- id is used to identify what the input is for --><input type="text" id="courseNumber" required value="3135"><label for="courseTitle">Course Name:</label><!-- id is used to identify what the input is for --><input type="text" id="courseTitle" required value="Front-End Web Application Development"><label for="reasonForTaking">Reason:</label><!-- id is used to identify what the input is for --><input type="text" id="reasonForTaking" required value="Required for my concentration"></input>';
+}
+
+function removeCourse() {
+    const attr = element.getAttribute("id").slice(9);
+        document.getElementById("course" + attr).innerHTML = '';
+        coursenum -= 1;
 }
