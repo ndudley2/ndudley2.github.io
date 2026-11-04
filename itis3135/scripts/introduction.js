@@ -7,7 +7,7 @@ document
   });
 
 
-const formElement = document.getElementById("form");
+const formElement = document.querySelector("form");
 formElement.addEventListener("submit", (e) => e.preventDefault()); // prevents page refresh / default behavior
 
 function loadImage(){
@@ -17,16 +17,34 @@ function loadImage(){
     document.getElementById('loadImage').innerHTML = text;
 }
 
-var coursenum = 1;
 function addCourse() {
-    coursenum += 1;
-    document.getElementById('course' + coursenum).innerHTML = document.getElementById("course1").innerHTML;
+  const nextCourseNumber = [2, 3, 4, 5, 6].find((number) =>
+    document.getElementById(`course${number}`).childElementCount === 0
+  );
+
+  if (!nextCourseNumber) {
+    return;
+  }
+
+  const course = document.getElementById("course1").cloneNode(true);
+  course.id = `course${nextCourseNumber}`;
+  course.querySelector("p").textContent = `Course ${nextCourseNumber}:`;
+
+  course.querySelectorAll("input").forEach((input) => {
+    const oldId = input.id;
+    input.id = `${oldId}${nextCourseNumber}`;
+    input.value = "";
+  });
+
+  course.querySelectorAll("label").forEach((label) => {
+    label.htmlFor = `${label.htmlFor}${nextCourseNumber}`;
+  });
+
+  const deleteButton = course.querySelector("button");
+  deleteButton.id = `delCourse${nextCourseNumber}`;
+  document.getElementById(`course${nextCourseNumber}`).replaceWith(course);
 }
 
-// function removeCourse() {
-//     if (coursenum > 1){
-//         const attr = element.getAttribute("id").slice(9);
-//             document.getElementById("course" + attr).innerHTML = '';
-//             coursenum -= 1;
-//     }
-// }
+function deleteCourse(button) {
+  button.parentElement.replaceChildren();
+}
