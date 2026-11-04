@@ -17,10 +17,10 @@ function loadImage(){
     document.getElementById('loadImage').innerHTML = text;
 }
 
-coursenum = 1;
+var coursenum = 1;
 function addCourse() {
     coursenum += 1;
-    document.getElementById('course' + coursenum).innerHTML = document.getElementById(course1).innerHTML;
+    document.getElementById('course' + coursenum).innerHTML = document.getElementById("course1").innerHTML;
 }
 
 function removeCourse() {
