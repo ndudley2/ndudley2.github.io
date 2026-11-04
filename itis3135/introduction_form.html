@@ -18,6 +18,8 @@
             <h2>Introduction Form</h2>
             <h3>Please Submit The Form Below</h3>
             <form>
+                <fieldset>
+                <legend>Personal Information</legend>
                 <label for="firstName">First Name:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="firstName" value="Natalia" required>
@@ -41,7 +43,10 @@
                 <label for="acknowledgmentDate">Acknowledgment Date:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="acknowledgmentDate" required value="2026-08-24">
-
+                </fieldset>
+                
+                <fieldset>
+                <legend>Mascot and Title</legend>
                 <label for="adjectives">Mascot Adjective:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="adjectives" value="Nice" required>
@@ -53,7 +58,10 @@
                 <label for="prettyNameDivider">Divider:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="prettyNameDivider" value="|" required>
+                </fieldset>
 
+                <fieldset>
+                <legend>Picture</legend>
                 <label for="img">Picture:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="file" id="img" required>
@@ -68,11 +76,13 @@
                 <label for="caption">Picture Caption:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="caption" value="Wearing my Duck shirt" required>
+                </fieldset>
 
+                <fieldset>
+                <legend>Background</legend>
                 <label for="statement">Personal Statement:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="statement" value="Hello! My name is Natalia Dudley. I’m 20 years old and in my third year at UNC Charlotte. I’m a computer science major with a concentration in software engineering." required>
-
                 <label for="personalBackground">Personal Background:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="personalBackground" required value="I grew up in a town called Wheaton in the Chicago suburbs. My family moved to Holly Springs, North Carolina, in 2021, when I was in my sophomore year of high school. I’ll never get used to the weather here!">
@@ -82,6 +92,9 @@
                 <label for="academicBackground">Academic Background:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="academicBackground" required value="Computer Science, Spring 2028">
+                </fieldset>
+                <fieldset>
+                <legend>Work Environment</legend>
                 <label for="primaryWorkComputer">Primary Work Computer:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="primaryWorkComputer" required value="Acer Swift SFG16-72T with Microsoft Windows 11 Home">
@@ -91,10 +104,11 @@
                 <label for="alternateComputerLocation">Alternate Computer & Location:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="alternateComputerLocation" required value="I can borrow a computer from the library and work in the library or at home">
+                </fieldset>
 
                 <fieldset>
                 <legend>Courses I'm Taking and Why:</legend>
-
+                <!-- Each course is within a div -->
                 <div id="course1">
                 <p>Course 1:</p>
                 <label for="department">Course Department:</label>
@@ -113,16 +127,22 @@
                 <button type="button" id="delCourse" onclick="deleteCourse(this)">Delete Course</button>
                 </div>
 
+                <!-- Each course is within a div -->
                 <div id="course2"></div>
+                <!-- Each course is within a div -->
                 <div id="course3"></div>
+                <!-- Each course is within a div -->
                 <div id="course4"></div>
+                <!-- Each course is within a div -->
                 <div id="course5"></div>
+                <!-- Each course is within a div -->
                 <div id="course6"></div>
 
                 <button type="button" onclick="addCourse()">Add Course</button>
                 </fieldset>
 
-
+                <fieldset>
+                <legend>Fun Stuff</legend>
                 <label for="quote">Quote:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="text" id="quote" required value="Lose yourself to dance!">
@@ -133,12 +153,15 @@
 
                 <label for="funnyItem">Funny Thing:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="funnyItem">
+                <input type="text" id="funnyItem" value="I love stickers">
 
                 <label for="somethingToShare">Something I'd like to share:</label>
                 <!-- id is used to identify what the input is for -->
-                <input type="text" id="somethingToShare">
+                <input type="text" id="somethingToShare" value="I have ADHD but it's mostly handled with medication">
+                </fieldset>
 
+                <fieldset>
+                <legend>Links</legend>
                 <label for="clt-web">CLT Web:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="url" id="clt-web" value="https://webpages.charlotte.edu/ndudley2/">
@@ -162,12 +185,20 @@
                 <label for="linkedin">LinkedIn:</label>
                 <!-- id is used to identify what the input is for -->
                 <input type="url" id="linkedin" value="https://www.linkedin.com/in/natalia-dudley-41b9312bb/">
+                </fieldset>
                 
                 <button type="submit">Submit</button>
                 <button type="reset">Reset</button>
                 <!-- id identifies the clear button -->
                 <button type="button" id="clear">Clear</button>
+                <button type="button" id="generateHtml">Generate HTML</button>
+                <button type="button" id="generateXml">Generate XML</button>
+                <button type="button" id="generateJson">Generate JSON</button>
             </form>
+            <section id="generatedOutputSection" hidden>
+                <h3 id="outputHeading">Generated Output</h3>
+                <pre id="generatedOutput" aria-labelledby="outputHeading" aria-live="polite"></pre>
+            </section>
         </main>
         <div data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.min.js"></script>

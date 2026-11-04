@@ -110,6 +110,13 @@ fieldset {
     border-color: #8BC9FF;
 }
 
+#generatedOutput {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    color: #dcb0ff;
+}
+
 legend {
     font-family: 'Trebuchet MS', sans-serif;
     background-color: #3d4558;
