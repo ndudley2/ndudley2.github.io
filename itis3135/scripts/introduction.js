@@ -35,7 +35,6 @@ function addCourse() {
   course.querySelectorAll("input").forEach((input) => {
     const oldId = input.id;
     input.id = `${oldId}${nextCourseNumber}`;
-    input.value = "";
   });
 
   course.querySelectorAll("label").forEach((label) => {
@@ -179,7 +178,7 @@ function appendHtmlData(parent, data) {
     return;
   }
 
-  parent.appendChild(parent.ownerDocument.createTextNode(data ?? ""));
+  parent.appendChild(parent.ownerDocument.createTextNode(String(data ?? "")));
 }
 
 function createXmlOutput(data) {
