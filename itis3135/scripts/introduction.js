@@ -17,6 +17,8 @@ function loadImage(){
     document.getElementById('loadImage').innerHTML = text;
 }
 
+const courseTemplate = document.getElementById("course1").cloneNode(true);
+
 function addCourse() {
   const nextCourseNumber = [2, 3, 4, 5, 6].find((number) =>
     document.getElementById(`course${number}`).childElementCount === 0
@@ -26,7 +28,7 @@ function addCourse() {
     return;
   }
 
-  const course = document.getElementById("course1").cloneNode(true);
+  const course = courseTemplate.cloneNode(true);
   course.id = `course${nextCourseNumber}`;
   course.querySelector("p").textContent = `Course ${nextCourseNumber}:`;
 
