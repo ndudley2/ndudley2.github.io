@@ -209,7 +209,7 @@ function appendXmlData(outputDocument, parent, key, value) {
       appendXmlData(outputDocument, element, childKey, childValue);
     });
   } else {
-    element.textContent = value ?? "";
+    element.textContent = value === null || value === undefined ? "" : String(value);
   }
   parent.appendChild(element);
 }
