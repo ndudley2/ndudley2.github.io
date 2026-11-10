@@ -1,0 +1,61 @@
+{
+  "firstName": "Natalia",
+  "middleName": "Lisette",
+  "nickname": "Didi",
+  "lastName": "Dudley",
+  "acknowledgment": "I understand that this is a public document, and I won’t put anything here I wouldn’t want anyone to see.",
+  "acknowledgmentDate": "2026-08-24",
+  "prettyNameDivider": "|",
+  "adjectives": "Nice",
+  "animal": "Dragonfly",
+  "img": "images/introduction_portrait.jpeg",
+  "pictureAlt": "portrait of myself",
+  "caption": "Wearing my Duck shirt",
+  "personalInfo": {
+    "statement": "Hello! My name is Natalia Dudley. I’m 20 years old and in my third year at UNC Charlotte. I’m a computer science major with a concentration in software engineering.",
+    "personalBackground": "I grew up in a town called Wheaton in the Chicago suburbs. My family moved to Holly Springs, North Carolina, in 2021, when I was in my sophomore year of high school. I’ll never get used to the weather here!",
+    "professionalBackground": "I’m a tutor here at UNC Charlotte.",
+    "academicBackground": "Computer Science, Spring 2028",
+    "primaryWorkComputer": "Acer Swift SFG16-72T with Microsoft Windows 11 Home",
+    "primaryWorkLocation": "Popp Martin Student Union",
+    "alternateComputerLocation": "I can borrow a computer from the library and work in the library or at home"
+  },
+  "courses": [
+    {
+      "department": "ITIS",
+      "courseNumber": "3135",
+      "courseTitle": "Front-End Web Application Development",
+      "reasonForTaking": "Required for my concentration"
+    }
+  ],
+  "quote": "Lose yourself to dance!",
+  "quoteAuthor": "Pharrell Williams",
+  "funnyItem": "I love stickers",
+  "somethingToShare": "I have ADHD but it's mostly handled with medication",
+  "footerLinks": [
+    {
+      "label": "CLT Web",
+      "url": "https://webpages.charlotte.edu/ndudley2/"
+    },
+    {
+      "label": "GitHub.io",
+      "url": "https://ndudley2.github.io/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/ndudley2"
+    },
+    {
+      "label": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/ndudley2"
+    },
+    {
+      "label": "Codecademy",
+      "url": "https://www.codecademy.com/profiles/ndudley2"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/natalia-dudley-41b9312bb/"
+    }
+  ]
+}
