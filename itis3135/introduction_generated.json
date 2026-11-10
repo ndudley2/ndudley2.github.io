@@ -26,6 +26,30 @@
       "courseNumber": "3135",
       "courseTitle": "Front-End Web Application Development",
       "reasonForTaking": "Required for my concentration"
+    },
+    {
+      "department": "ITSC",
+      "courseNumber": "3688",
+      "courseTitle": "Computing and AI: Ethics, Society & Communication",
+      "reasonForTaking": "Required for my major, honors course"
+    },
+    {
+      "department": "ITSC",
+      "courseNumber": "2175",
+      "courseTitle": "Logic and Algorithms",
+      "reasonForTaking": "Required for my major"
+    },
+    {
+      "department": "MATH",
+      "courseNumber": "2164",
+      "courseTitle": "Matrices & Linear Algebra",
+      "reasonForTaking": "Required for my major"
+    },
+    {
+      "department": "ITIS",
+      "courseNumber": "3310",
+      "courseTitle": "Software Architecture & Design",
+      "reasonForTaking": "Required for my concentration"
     }
   ],
   "quote": "Lose yourself to dance!",
