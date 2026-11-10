@@ -178,13 +178,13 @@ function showGeneratedOutput(format) {
 
   if (format === "html") {
     heading.textContent = "Generated HTML";
-    output.textContent = createHtmlOutput(data);
+    output.value = createHtmlOutput(data);
   } else if (format === "xml") {
     heading.textContent = "Generated XML";
-    output.textContent = createXmlOutput(data);
+    output.value = createXmlOutput(data);
   } else {
     heading.textContent = "Generated JSON";
-    output.textContent = JSON.stringify(data, null, 2);
+    output.value = JSON.stringify(data, null, 2);
   }
 
   document.getElementById("generatedOutputSection").hidden = false;

@@ -112,10 +112,16 @@ fieldset {
 }
 
 #generatedOutput {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 20rem;
     max-width: 100%;
-    overflow-wrap: anywhere;
-    white-space: pre-wrap;
+    resize: vertical;
+    white-space: pre;
+    font-family: monospace;
     color: #dcb0ff;
+    background-color: #3d4558;
+    border: 1px solid #8BC9FF;
 }
 
 legend {

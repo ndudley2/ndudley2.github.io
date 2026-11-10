@@ -197,9 +197,10 @@
                 <button type="button" id="generateXml">Generate XML</button>
                 <button type="button" id="generateJson">Generate JSON</button>
             </form>
+            <!-- id shows where the JSON, HTML, or XML output will be displayed -->
             <section id="generatedOutputSection" hidden>
                 <h3 id="outputHeading">Generated Output</h3>
-                <pre id="generatedOutput" aria-labelledby="outputHeading" aria-live="polite"></pre>
+                <textarea id="generatedOutput" aria-labelledby="outputHeading" aria-live="polite" rows="20" readonly></textarea>
             </section>
         </main>
         <div data-include="components/footer.html"></div>
