@@ -1,0 +1,21 @@
+body {
+    background-color: #FFEBE7;
+    max-width: 80%;
+    margin: auto;
+}
+hr {
+    border: 2px dotted #FF82A9;
+}
+h1 {
+    color: #7F95D1;
+    font-family: "Brush Script MT", cursive;
+    border: 1px solid #FFC0BE;
+}
+p {
+    color: #4E3D42;
+    font-family: "Palatino", serif;
+}
+h2 {
+    color: #4E3D42;
+    font-family: "Palatino", serif;
+}
