@@ -4,7 +4,7 @@
         <title>Nice Dragonfly | Home</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="styles/default.css">
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -13,10 +13,7 @@
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
     </head>
     <body>
-        <header>
-            <h1>Nice Dragonfly</h1>
-        </header>
-        <hr>
+        <div data-include="components/header.html"></div>
         <main>
             <h2>Home</h2>
             <p>Hey friends! Welcome to the official Nice Dragonfly website.</p>
@@ -25,12 +22,12 @@
                 <img src="images/unicorn_donut.jpg" alt="a frosted donut decorated to look like a unicorn">
                 <figcaption>Our donuts look and taste fantastic!</figcaption>
             </figure>
+            <figure>
+                <img src="images/fancy_donut_assortment.jpg" alt="a frosted donut decorated to look like a unicorn">
+                <figcaption>The possibilities are endless...</figcaption>
+            </figure>
         </main>
-        <hr>
-        <footer>
-            <p>"Time flies when you're eating donuts!"</p>
-            <p>Site Designed By <a target="_blank" href="../nataliadudleydesigns.com/">Natalia Dudley Designs</a></p>
-            <p>Natalia Dudley ©2026</p>
-        </footer>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>
