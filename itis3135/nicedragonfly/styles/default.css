@@ -16,7 +16,7 @@ h1 {
     margin: auto;
     font-size: 2.5em;
 }
-p, figcaption {
+p, figcaption, blockquote {
     color: #4E3D42;
     font-family: "Palatino Linotype", serif;
 }
@@ -48,5 +48,13 @@ button {
     color: #4E3D42;
 }
 .grid {
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media only screen and (orientation:portrait) {
+    img {
+        width: 80%;
+        height: auto;
+    }
 }
