@@ -27,6 +27,26 @@ h2 {
 img {
     width: 40%;
 }
-link {
+a {
     color:#7F95D1;
+}
+input {
+    color: #4E3D42;
+    font-family: "Palatino Linotype", serif;
+}
+fieldset {
+    border: 2px solid #FFC0BE;
+}
+legend {
+    color: #4E3D42;
+    font-family: "Palatino Linotype", serif;
+}
+button {
+    font-family: "Palatino Linotype", serif;
+    background-color: #FFEBE7;
+    border-color: #FFC0BE;
+    color: #4E3D42;
+}
+.grid {
+    grid-template-columns: auto auto auto;
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nice Dragonfly | Order</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Order</h2>
+            <p>Hungry for some custom donuts? Order in-store or online through this form.</p>
+            <form>
+                <fieldset>
+                    <legend>How many?</legend>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="dozen">
+                    <label for="dozen">A dozen</label>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="2dozen">
+                    <label for="2dozen">2 dozen</label>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="3dozen">
+                    <label for="3dozen">3 dozen</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Donut Batter</legend>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="classic">
+                    <label for="classic">Classic</label>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="chocolate">
+                    <label for="chocolate">Chocolate</label>
+                    <!-- id to connect input with label -->
+                    <input type="radio" id="half">
+                    <label for="half">Half classic, half chocolate</label>
+                </fieldset>
+                <fieldset>
+                <legend>Colors:</legend>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="red">
+                <label for="red">Red</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="orange">
+                <label for="orange">Orange</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="yellow">
+                <label for="yellow">Yellow</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="green">
+                <label for="green">Green</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="blue">
+                <label for="blue">Blue</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="purple">
+                <label for="purple">Purple</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="pink">
+                <label for="pink">Pink</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="brown">
+                <label for="brown">Brown</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="black">
+                <label for="black">Black</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="white">
+                <label for="white">White</label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Frosting Flavors</legend>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="vanilla">
+                <label for="vanilla">Vanilla</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="chocolate">
+                <label for="chocolate">Chocolate</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="strawberry">
+                <label for="strawberry">Strawberry</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="pumpkin">
+                <label for="pumpkin">Pumpkin Spice</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="mint">
+                <label for="mint">Mint</label>
+                <!-- id to connect input with label -->
+                <input type="checkbox" id="blackberry">
+                <label for="blackberry">Blackberry</label>
+                </fieldset>
+
+                <p>You can also upload a picture for us to use as inspiration!</p>
+                <fieldset>
+                <legend>Picture (optional)</legend>
+                <label for="img">Upload a picture:</label>
+                <!-- id is used to identify what the input is for -->
+                <input type="file" id="img">
+                <button type="button" onclick="loadImage()">Click here to load</button>
+                <!-- this div is where the image shows up after loaded -->
+                <div id="loadImage"></div>
+                </fieldset>
+
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <p>Thank you for choosing Nice Dragonfly!</p>
+            <img src="images/donut_coffee_smile.png" alt="a plate with a mug of coffee, a donut, and jam in the shape of a smiley face">
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
