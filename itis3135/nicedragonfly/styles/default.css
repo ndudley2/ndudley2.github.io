@@ -6,15 +6,19 @@ body {
 hr {
     border: 3px dotted #FF82A9;
 }
+header {
+    margin: auto;
+    text-align: center;
+}
 h1 {
-    color: #7F95D1;
+    color: #627abe;
     font-family: "Brush Script MT", cursive;
     border: 3px solid #FFC0BE;
-    border-radius: 5px;
-    max-width: 50vw;
-    padding: 5px;
+    border-radius: 25px;
+    max-width: 25vw;
+    padding: 15px;
     margin: auto;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 p, figcaption, blockquote {
     color: #4E3D42;
@@ -26,9 +30,10 @@ h2 {
 }
 img {
     width: 40%;
+    margin: auto;
 }
 a {
-    color:#7F95D1;
+    color:#627abe;
 }
 input {
     color: #4E3D42;
@@ -46,11 +51,6 @@ button {
     background-color: #FFEBE7;
     border-color: #FFC0BE;
     color: #4E3D42;
-}
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 @media only screen and (orientation:portrait) {
     img {
