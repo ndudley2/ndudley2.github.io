@@ -44,10 +44,7 @@ img {
 figure {
     margin: auto;
     display: block;
-}
-figcaption {
-    margin: auto;
-    display: block;
+    text-align: center;
 }
 a {
     color:#627abe;
