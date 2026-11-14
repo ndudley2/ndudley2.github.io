@@ -7,7 +7,7 @@ async function fetchData(){
         picture.style.maxWidth = "200px";
         const label = document.createElement("p");
         label.textContent = username;
-        document.body.append(picture);
-        document.body.append(label);
+        document.main.append(picture);
+        document.main.append(label);
     }
 }
