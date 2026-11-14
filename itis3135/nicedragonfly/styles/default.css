@@ -45,6 +45,10 @@ figure {
     margin: auto;
     display: block;
 }
+figcaption {
+    margin: auto;
+    display: block;
+}
 a {
     color:#627abe;
 }
