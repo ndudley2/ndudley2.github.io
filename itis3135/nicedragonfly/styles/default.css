@@ -36,7 +36,14 @@ h2 {
 img {
     display: block;
     height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+figure {
     margin: auto;
+    display: block;
 }
 a {
     color:#627abe;
