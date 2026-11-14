@@ -4,7 +4,7 @@ body {
     margin: auto;
 }
 hr {
-    border: 3px dotted #FF82A9;
+    border: 3px dotted #FFC0BE;
 }
 header, footer {
     margin: auto;
@@ -34,6 +34,7 @@ h2 {
     font-family: "Palatino Linotype", serif;
 }
 img {
+    display: block;
     height: 300px;
     margin: auto;
 }
