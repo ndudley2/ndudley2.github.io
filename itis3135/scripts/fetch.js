@@ -12,12 +12,12 @@ async function fetchData(){
         picture.style.maxWidth = "200px";
         picture.style.display = "block";
         picture.style.margin = "auto";
-        const label = document.createElement("p");
+        //const label = document.createElement("p");
         const label2 = document.createElement("p");
-        label.textContent = username;
+        //label.textContent = username;
         label2.textContent = nameMascot;
         main.append(picture);
-        main.append(label);
+        //main.append(label);
         main.append(label2);
     }
 }
