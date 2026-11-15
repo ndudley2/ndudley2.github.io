@@ -16,6 +16,7 @@ async function fetchData(){
         const label2 = document.createElement("p");
         //label.textContent = username;
         label2.textContent = nameMascot;
+        label2.style.textAlign = "center";
         const br = document.createElement("br");
         main.append(picture);
         //main.append(label);
