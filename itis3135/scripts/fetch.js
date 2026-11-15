@@ -5,17 +5,18 @@ async function fetchData(){
     let main = document.querySelector("main");
     for (const username in all) {
         const record = all[username];
-        const name_mascot = record.introductionData.firstName + " " + record.introductionData.lastName + "'s " + record.introductionData.adjectives + " " + record.introductionData.animal;
+        const nameMascot = record.introductionData.firstName + " " + record.introductionData.lastName + "'s " + record.introductionData.adjectives + " " + record.introductionData.animal;
         const picture = document.createElement("img");
         picture.src = record.introductionData.img;
         picture.alt = record.introductionData.alt;
-        picture.style.maxWidth = "200px";
+        picture.style.width = "200px";
+        picture.style.margin = "auto";
+        nameMascot.style.textAlign = "center"
         const label = document.createElement("p");
-        const label2 = document.createElement("p");
-        label.textContent = username;
-        label2.textContent = name_mascot;
+        const br = document.createElement("br");
+        label.textContent = nameMascot;
         main.append(picture);
         main.append(label);
-        main.append(label2);
+        main.append(br);
     }
 }
