@@ -11,7 +11,7 @@ async function fetchData(){
         picture.alt = record.introductionData.alt;
         picture.style.width = "200px";
         picture.style.margin = "auto";
-        nameMascot.style.textAlign = "center"
+        nameMascot.style.textAlign = "center";
         const label = document.createElement("p");
         const br = document.createElement("br");
         label.textContent = nameMascot;
