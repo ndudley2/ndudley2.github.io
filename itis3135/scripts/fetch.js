@@ -10,7 +10,7 @@ async function fetchData(){
         picture.src = record.introductionData.img;
         picture.alt = record.introductionData.alt;
         picture.style.width = "200px";
-        picture.style.margin = "auto";
+        //picture.style.margin = "auto";
         nameMascot.style.textAlign = "center";
         const label = document.createElement("p");
         const br = document.createElement("br");
