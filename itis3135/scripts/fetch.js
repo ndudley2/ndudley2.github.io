@@ -5,7 +5,7 @@ async function fetchData(){
     let main = document.querySelector("main");
     for (const username in all) {
         const record = all[username];
-        const name_mascot = record.introductionData.firstName + " " + record.introductionData.lastName + "'s " + record.introductionData.adjectives + " " + record.introductionData.animal;
+        const nameMascot = record.introductionData.firstName + " " + record.introductionData.lastName + "'s " + record.introductionData.adjectives + " " + record.introductionData.animal;
         const picture = document.createElement("img");
         picture.src = record.introductionData.img;
         picture.alt = record.introductionData.alt;
@@ -13,7 +13,7 @@ async function fetchData(){
         const label = document.createElement("p");
         const label2 = document.createElement("p");
         label.textContent = username;
-        label2.textContent = name_mascot;
+        label2.textContent = nameMascot;
         main.append(picture);
         main.append(label);
         main.append(label2);
