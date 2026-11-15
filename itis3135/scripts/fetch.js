@@ -12,7 +12,6 @@ async function fetchData(){
         picture.style.maxWidth = "200px";
         picture.style.display = "block";
         picture.style.margin = "auto";
-        nameMascot.style.textAlign = "center";
         const label = document.createElement("p");
         const label2 = document.createElement("p");
         label.textContent = username;
