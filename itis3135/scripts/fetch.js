@@ -13,10 +13,8 @@ async function fetchData(){
         //picture.style.margin = "auto";
         nameMascot.style.textAlign = "center";
         const label = document.createElement("p");
-        const br = document.createElement("br");
         label.textContent = nameMascot;
         main.append(picture);
         main.append(label);
-        main.append(br);
     }
 }
