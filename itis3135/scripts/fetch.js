@@ -5,7 +5,7 @@ async function fetchData(){
     let main = document.querySelector("main");
     for (const username in all) {
         const record = all[username];
-        const nameMascot = record.introductionData.firstName + " " + record.introductionData.lastName + "'s " + record.introductionData.adjectives + " " + record.introductionData.animal;
+        const nameMascot = record.introductionData.firstName + " " + record.introductionData.lastName + " " + record.introductionData.prettyNameDivider + " " + record.introductionData.adjectives + " " + record.introductionData.animal;
         const picture = document.createElement("img");
         picture.src = record.introductionData.img;
         picture.alt = record.introductionData.alt;
