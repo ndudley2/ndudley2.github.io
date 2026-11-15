@@ -10,6 +10,7 @@ async function fetchData(){
         picture.src = record.introductionData.img;
         picture.alt = record.introductionData.alt;
         picture.style.maxWidth = "200px";
+        picture.style.margin = "auto";
         const label = document.createElement("p");
         const label2 = document.createElement("p");
         label.textContent = username;
