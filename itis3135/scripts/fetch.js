@@ -16,8 +16,10 @@ async function fetchData(){
         const label2 = document.createElement("p");
         //label.textContent = username;
         label2.textContent = nameMascot;
+        const br = document.createElement("br");
         main.append(picture);
         //main.append(label);
         main.append(label2);
+        main.append(br);
     }
 }
